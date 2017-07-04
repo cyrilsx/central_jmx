@@ -1,3 +1,19 @@
+.gradle/
+target/
+build/
+
+# intellij
+.idea
+**/*.iml
+
+# angular
+typings
+app/**/*.js
+app/**/*.map
+node_modules
+jspm_packages
+bower_components
+
 # Compiled class file
 *.class
 
