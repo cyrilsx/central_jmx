@@ -1,0 +1,27 @@
+
+<md-toolbar color="primary" class="toolbar" style="text-align: right">
+  <span><h1>Welcome to {{ title }}</h1></span>
+
+  <div class="tools">
+  <md-input-container>
+      <input mdInput  [formControl]="searchControl" [mdAutocomplete]="auto">
+  </md-input-container>
+
+  <md-autocomplete #auto="mdAutocomplete">
+    <md-option *ngFor="let option of filteredApp" [value]="option">
+      {{ option }}
+    </md-option>
+  </md-autocomplete>
+
+  <md-icon class="icon">
+    <button md-icon-button [mdMenuTriggerFor]="appMenu">
+      <md-icon svgIcon="menu"></md-icon>
+    </button>
+  </md-icon>
+
+  <md-menu #appMenu="mdMenu" yPosition="below">
+    <button md-menu-item> Settings</button>
+    <button md-menu-item> Help</button>
+  </md-menu>
+  </div>
+</md-toolbar>

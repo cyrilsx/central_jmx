@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.login.css']
 })
 export class LoginComponent {
-  title = 'app';
 }
